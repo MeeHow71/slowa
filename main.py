@@ -5,12 +5,13 @@ import replit
 
 gs = ["", "", "", "", "", ""]
 
+
 # funkcja do spawdzania, czy wszystko działa
 def check():
 	n = 0
 	g = ""
 	l = ["grey", "grey", "grey", "grey", "grey"]
-	for i in range(0,5):
+	for i in range(0, 5):
 		if guess[i] in word:
 			l[i] = "yellow"
 			# kolorujemy literkę na żółto
@@ -31,7 +32,7 @@ def check():
 		# wypisuje listę odgadnięć
 		print(gs[n])
 		n = n + 1
-	if l == ["green","green","green","green","green"]:
+	if l == ["green", "green", "green", "green", "green"]:
 		# jeśli wszystkie zielone to zwraca wygraną
 		return True
 			
